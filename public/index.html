@@ -5,8 +5,16 @@
     <body>
         <textarea rows="30" cols="50" id="editor" style="background-color:whitesmoke; color:black" placeholder="Type Your Text..."></textarea>
     </body>
-    <script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
     <script>
-
+        var socket = io('http://localhost:3000');
+        const editor = document.getElementById("editor")
+        editor.addEventListener("keyup", (e) => {
+            const text = editor.value
+            socket.send(text)
+        })
+        socket.on('message', (data) => {
+            editor.value = data
+        })
     </script>
 </html>
