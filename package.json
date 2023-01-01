@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/osamahahmad/collaborative-text-editor/issues"
   },
-  "homepage": "https://github.com/osamahahmad/collaborative-text-editor#readme"
+  "homepage": "https://github.com/osamahahmad/collaborative-text-editor#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4",
+    "socket.io-client": "^4.5.4"
+  }
 }
