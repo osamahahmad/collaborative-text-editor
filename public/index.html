@@ -7,7 +7,7 @@
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
     <script>
-        var socket = io('http://localhost:3000');
+        var socket = io('http://server.local:3000');
         const editor = document.getElementById("editor")
         editor.addEventListener("keyup", (e) => {
             const text = editor.value
