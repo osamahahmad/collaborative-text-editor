@@ -30,5 +30,3 @@ npm install express
 npm install socket.io
 ```
 `express` is the most popular Node web framework, and `socket.io` enables real-time bidirectional event-based communication.
-
-I already have a global install of [`pm2`](https://www.npmjs.com/package/pm2), which I can use to start and reload this project.
