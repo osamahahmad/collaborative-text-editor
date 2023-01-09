@@ -13,6 +13,8 @@ cd Node.js/collaborative-text-editor
 I then generated a license file, a relevant .gitignore and a Contributor Covenenant:
 ```
 npx license
+```
+```
 npx gitignore node
 npx covgen me@osamahahmad.com
 ```
